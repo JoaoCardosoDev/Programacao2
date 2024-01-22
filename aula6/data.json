@@ -1,0 +1,42 @@
+[
+    {
+        "type": "car",
+        "brand": "ferrari",
+        "speed": 900,
+        "image": "Ferrari.jpg"
+    },
+    {
+        "type": "car",
+        "brand": "fiat",
+        "speed": 50,
+        "image": "Fiat.png"
+
+    },
+    {
+        "type": "motorcycle",
+        "brand": "ducatti",
+        "speed": 900,
+        "image": "Ducatti.png"
+
+    },
+    {
+        "type": "motorcycle",
+        "brand": "kawazaki",
+        "speed": 600,
+        "image": "Kawazaki.png"
+
+    },
+    {
+        "type": "car",
+        "brand": "renault",
+        "speed": 50,
+        "image": "Renault.jpg"
+
+    },
+    {
+        "type": "boat",
+        "brand": "titanic",
+        "speed": 2000,
+        "image": "Titanic.png"
+    }
+]
