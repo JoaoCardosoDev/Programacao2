@@ -1,0 +1,13 @@
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.inactive {
+
+    opacity: 0.5;
+    pointer-events: none;
+}
