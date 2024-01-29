@@ -22,7 +22,7 @@ window.onload = () => {
             console.log("Even")
             return true
         }else{
-            console.log("False")
+            console.log("Odd")
             return false
         }
     }
@@ -68,7 +68,10 @@ window.onload = () => {
         idade: "30",
         genero: "male"
     }
-    console.log(obj)
+    // console.log(obj)
+    console.log(obj.name)
+    console.log(obj.idade)
+    console.log(obj.genero)
 
 
     /**
