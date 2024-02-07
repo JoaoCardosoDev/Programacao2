@@ -1,0 +1,9 @@
+[
+    {
+        "type": "painting",
+        "title": "Argenteuil",
+        "medium": "Oil on canvas",
+        "image": "./Assets/argenteuil_1970.17.42.jpg",
+        "artist": "Claude Monet"
+    }
+]

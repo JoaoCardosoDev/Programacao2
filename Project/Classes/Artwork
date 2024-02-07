@@ -1,0 +1,16 @@
+
+export default class Artwork {
+    #title;
+    #imageTag;
+    #callback;
+    constructor(data, callback) {
+        this.#title = title;
+
+        this.#imageTag = document.createElement("img");
+        this.#imageTag.src = image;
+        this.#imageTag.onclick = () => this.#callback;
+
+        const wrapper = document.getElementById("wrapper");
+        wrapper.appendChild(this.#imageTag);
+    } 
+}

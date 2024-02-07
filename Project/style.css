@@ -5,44 +5,100 @@
 	vertical-align: baseline;
 }
 
+@font-face {
+    font-family: Lato;
+    src: url(Assets/Lato-Regular.ttf);
+}
 body{
     background-color: rgba(5, 30, 42, 1);
+    width: 100dvw;
+    height: 100dvw;
+    display: grid;
+    grid-template-areas:
+    'banner banner'
+    'wrapper infoContainer'
+    'wrapper infoContainer'
+    ;
+    grid-template-rows: 204px auto;
+    grid-template-columns: 50% 50% ;
 }
-
+h1{
+    text-align: center;
+    color: #A3E6EE;
+    font-size: 48px;
+    justify-content: center;
+}
+h2{
+    color: #A3E6EE;
+    font-size: 32px;
+    display: flex;
+}
+ul{
+    font-size: 16px;
+    font-family: Lato;
+    color: white;
+    list-style-type: none;
+}
 .banner{
     display: flex;
     width: 808px;
     height: 92px;
     border-radius: 8px;
     justify-content: center;
-    margin: auto;
     margin-top: 64px;
-    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
     background: #2E2758;
+    grid-area: banner;
 }
-.wrapper{
+
+#wrapper{
     display: flex;
-    width: 632px;
+    flex-direction: row;
     height: 756px;
     border-radius: 8px;
     background: #2E2758;
     margin-left: 64px;
     margin-right: 24px;
-    flex-direction: row;
+    padding: 32px;
+    grid-area: wrapper;
 }
-.infoCotainer{
+.infoContainer{
     display: flex;
-    width: 632px;
-    height: 756px;
+    flex-direction: column;
+    height: 100%;
     border-radius: 8px;
     margin-right: 64px;
     margin-left: 24px;
 }
 .devlog{
-    flex-direction: column;
     display: flex;
-    width: 632px;
-    height: 288px;
+    flex-direction: column;
+    height: 286px;
     margin-bottom: 48px;
     background: #2E2758;
+    padding: 32px;
+    border-radius: 8px;
+    flex: 1;
+}
+.showConsole{
+    display: flex;
+    height: 183px;
+    background: hsl(0, 0%, 0%);
+    margin-top: 24px;
+}
+.info{
+    height: 100%;
+    background: #2E2758;
+    display: flex;
+    padding: 32px;
+    border-radius: 8px;
+}
+.paintingInfo{
+    width: 316px;
+    flex: 1;
+}
+.authorInfo{
+    width: 316px;
+    flex: 1;
 }
