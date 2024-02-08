@@ -54,6 +54,7 @@ ul{
 
 #wrapper{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 756px;
     border-radius: 8px;
@@ -62,6 +63,13 @@ ul{
     margin-right: 24px;
     padding: 32px;
     grid-area: wrapper;
+}
+#wrapper img{
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    margin-top: 32px;
+
 }
 .infoContainer{
     display: flex;
@@ -83,9 +91,15 @@ ul{
 }
 .showConsole{
     display: flex;
+    flex-direction: column-reverse;
     height: 183px;
     background: hsl(0, 0%, 0%);
     margin-top: 24px;
+    color: white;
+    font-family: Lato;
+    font-size: 16px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .info{
     height: 100%;
@@ -101,4 +115,12 @@ ul{
 .authorInfo{
     width: 316px;
     flex: 1;
+}
+.picViewer{
+    position: absolute;
+    border: 64px;
+    background-color: #2E2758;
+    opacity: 50%;
+    width: 100dvw;
+    z-index: 1000;
 }
