@@ -4,7 +4,11 @@
         "title": "Argenteuil",
         "medium": "Oil on canvas",
         "image": "./Assets/argenteuil_1970.17.42.jpg",
-        "artist": "Claude Monet"
+        "artDesc": "This is a captivating masterpiece by Claude Monet, depicting the tranquil beauty of the French town along the Seine. Rendered with vibrant colors and fluid brushstrokes, the painting captures the essence of Impressionism, showcasing Monet's fascination with light and atmosphere. With its serene depiction of sailboats gliding on the river, 'Argenteuil' transports viewers to a timeless moment of peaceful contemplation.",
+        "artist": "Claude Monet",
+        "artistimg": "./Assets/Claude_Monet_1899_Nadar.jpg",
+        "life": "1840-1926",
+        "artistDesc": "A seminal figure of Impressionism, is celebrated for his revolutionary portrayal of light and atmosphere, exemplified in iconic works like 'Impression, Sunrise'. Despite facing personal and financial challenges, Monet's legacy endures as a pioneer of modern art, inspiring generations with his evocative depictions of nature's transient beauty."
     },
     {
         "type": "painting",
@@ -18,7 +22,9 @@
         "title": "Man in Oriental Costume",
         "medium": "Oil on canvas",
         "image": "./Assets/man_in_oriental_costume_1940.1.13.jpg",
-        "artist": "Rembrandt"
+        "artist": "Rembrandt",
+        "life": "1606-1669",
+        "artistDesc": "A Dutch Golden Age painter, renowned for his mastery of light and emotion in works like The Night Watch. Despite personal struggles, his legacy endures as one of Europe's greatest artists, inspiring generations with his timeless artistry."
     },
     {
         "type": "painting",

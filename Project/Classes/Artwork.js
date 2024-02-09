@@ -30,9 +30,19 @@ export default class Artwork {
         <li>Title: ${this.#data.title} </li><br>
         <li>Type: ${this.#data.type} </li><br>
         <li>Medium: ${this.#data.medium} </li><br>
-        <li>Description: Description Description Description Description Description Description Description Description Description Description Description </li><br>
-        </ul>
-        `;
+        <li>Description: ${this.#data.artDesc} </li><br>
+        </ul>`;
+        let author = document.querySelector(".info .authorInfo");
+        let aimg = document.createElement('img');
+        aimg.src = this.#data.artistimg;
+        author.appendChild(aimg);
+        document.querySelector(".info .authorInfo").innerHTML +=`
+        <ul>
+        <li>Author: ${this.#data.artist} </li><br>
+        <li>Life: ${this.#data.life} </li><br>
+        <li>Description: ${this.#data.artistDesc} </li><br>
+        </ul>`;
+
     }
     handlerClick() {
         console.log(`${this.#data.title} clicked`)
@@ -54,7 +64,6 @@ export default class Artwork {
     get image () {
         return this.#data.image;
 }
-
     get active() {
         return this.#imageTag.className.length !== 0;
 }
