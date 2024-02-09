@@ -13,4 +13,5 @@ window.onload = async () => {
     res.forEach(element => {
         gallery.addArt(element);
     })
+    console.log(gallery.gallery[0].image)
 }

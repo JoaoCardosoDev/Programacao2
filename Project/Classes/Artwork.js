@@ -3,11 +3,11 @@ export default class Artwork {
     
     #data;
     #imageTag;
-    #callback;
+    // #callback;
     
-    constructor(data, callback) {
+    constructor(data, /*callback*/) {
         this.#data = data;
-        this.#callback = callback;
+        // this.#callback = callback;
 
         this.#imageTag = document.createElement("img");
         this.#imageTag.src = this.#data.image;
@@ -35,18 +35,43 @@ export default class Artwork {
         let author = document.querySelector(".info .authorInfo");
         let aimg = document.createElement('img');
         aimg.src = this.#data.artistimg;
-        author.appendChild(aimg);
-        document.querySelector(".info .authorInfo").innerHTML +=`
+        document.querySelector(".info .authorInfo").innerHTML =`
         <ul>
         <li>Author: ${this.#data.artist} </li><br>
         <li>Life: ${this.#data.life} </li><br>
         <li>Description: ${this.#data.artistDesc} </li><br>
         </ul>`;
-
+        author.prepend(aimg);
+        
     }
     handlerClick() {
-        console.log(`${this.#data.title} clicked`)
-        document.querySelector(".showConsole").innerHTML += `Clicked ${this.#data.title} <br>`;
+
+        let divShow = document.querySelector(".picViewer");
+        let img = document.createElement('img');
+        img.src = this.#data.image;
+        img.className = "popImage";
+        
+        let divShowDisplayStyle = window.getComputedStyle(divShow).getPropertyValue('display');
+
+
+        if (divShowDisplayStyle === "none") {
+        
+            divShow.style.display = "flex"
+            divShow.appendChild(img);
+            img.addEventListener("click", () => {        
+                console.log("Hiding div");
+                divShow.style.display = "none";
+                divShow.removeChild(img);
+                console.log(`${this.#data.title} pop up closed`);
+                document.querySelector(".showConsole").innerHTML += `Clicked ${this.#data.title} <br>`;
+        }
+            , false);
+
+            console.log(`${this.#data.title} clicked`)
+            document.querySelector(".showConsole").innerHTML += `Clicked ${this.#data.title} <br>`;
+
+    }
+    
     }
 
     get type () {
@@ -69,5 +94,8 @@ export default class Artwork {
 }
     set active(value) {
         this.#imageTag.className = value ? 'active' : '';
+    }
+    get imageTag() {
+        return this.#imageTag;
     }
 }

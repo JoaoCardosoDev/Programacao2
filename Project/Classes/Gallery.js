@@ -4,14 +4,17 @@ import Sculpture from "./Sculpture.js";
 export default class Gallery {
 
     #gallery;
-    #callback;
-    #currentPiece = null;
+    #next;
+    #back;
 
     constructor(/*callback*/) {
         this.#gallery = [];
-        /*this.#callback = callback;*/
-
+        this.#next = document.querySelector(".next")
+        this.#back = document.querySelector(".back")
         this.loaded();
+
+        this.#next.addEventListener("click",() => this.next(), false)
+        this.#back.addEventListener("click",() => this.back(), false)
     }
 
     loaded() {
@@ -21,27 +24,51 @@ export default class Gallery {
     addArt(art) {
         switch (art.type) {
             case "painting":
-                this.#gallery.push(new Painting(art, this.#callbackArt(art)));
+                this.#gallery.push(new Painting(art/*, this.#callbackArt(art)*/));
                 break;
             case "sculpture":
-                this.#gallery.push(new Sculpture(art, this.#callbackArt(art)));
+                this.#gallery.push(new Sculpture(art/*, this.#callbackArt(art)*/));
                 break;
         }
-    }
 
-    #callbackArt(art) {
-        if (this.#currentPiece){
-            this.#currentPiece.active = false;
+    } 
+    next() {
+ 
+        let currentImage = document.querySelector(".popImage");
+        let currentIndex = this.#gallery.findIndex(element => element.image === currentImage.getAttribute('src'));
+        let nextImage = this.gallery[currentIndex + 1].image;
+        currentImage.src = nextImage;
         }
-
-        this.#currentPiece = this.#gallery.find(ar => ar.title === art.title)
-        if(this.#currentPiece) {
-            this.#currentPiece.active = true;
-            document.querySelector(".paintingInfo").innerText = this.#currentPiece.title;
-            this.#callback(art);
+    
+    back() {
+        let currentImage = document.querySelector(".popImage");
+        let currentIndex = this.#gallery.findIndex(element => element.image === currentImage.getAttribute('src'));
+        if (currentIndex>=0 && currentIndex<= this.#gallery.findIndex()) {
+            let previousImage = this.gallery[currentIndex - 1].image;
+            currentImage.src = previousImage;
         }else{
-            console.log("Art not found");
+            let div = document.querySelector(".picViewer");
+            div.style.display = "none";
         }
 
     }
+
+    get gallery() {
+        return this.#gallery;
+    }
+    // #callbackArt(art) {
+    //     if (this.#currentPiece){
+    //         this.#currentPiece.active = false;
+    //     }
+
+    //     this.#currentPiece = this.#gallery.find(ar => ar.title === art.title)
+    //     if(this.#currentPiece) {
+    //         this.#currentPiece.active = true;
+    //         document.querySelector(".paintingInfo").innerText = this.#currentPiece.title;
+    //         this.#callback(art);
+    //     }else{
+    //         console.log("Art not found");
+    //     }
+
+    // }
 }

@@ -1,12 +1,14 @@
 import Artwork from "./Artwork.js";
 
 export default class Sculpture extends Artwork {
-    #medium; //colocar aqui o medium?
+    #image;
 
     constructor(data, callback){
         super(data, callback);
 
-        this.#medium = data.medium;
+        this.#image = data.image;
     }
-
+    get image () {
+        return this.#image;
+    }
 }
