@@ -15,14 +15,18 @@
         "title": "Farm house in Provence",
         "medium": "Oil on canvas",
         "image": "./Assets/farmhouse_in_provence_1970.17.34.jpg",
-        "artist": "Vincent van Gogh"
-    },
+        "artist": "Vincent van Gogh",
+        "artistimg": "./Assets/Vincent_van_Gogh.jpg",
+        "life": "1853-1890",
+        "artistDesc": "A Dutch Post-Impressionist painter, is renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'. His bold brushwork and emotional intensity continue to captivate audiences, making him one of the most influential figures in the history of Western art."
+        },
     {
         "type": "painting",
         "title": "Man in Oriental Costume",
         "medium": "Oil on canvas",
         "image": "./Assets/man_in_oriental_costume_1940.1.13.jpg",
         "artist": "Rembrandt",
+        "artistimg": "./Assets/Rembrandt_self_portrait.jpg",
         "life": "1606-1669",
         "artistDesc": "A Dutch Golden Age painter, renowned for his mastery of light and emotion in works like The Night Watch. Despite personal struggles, his legacy endures as one of Europe's greatest artists, inspiring generations with his timeless artistry."
     },
@@ -31,41 +35,59 @@
         "title": "Man with a Sheet of Music",
         "medium": "Oil on canvas",
         "image": "./Assets/man_with_a_sheet_of_music_2014.136.41.jpg",
-        "artist": "Rembrandt"
+        "artist": "Rembrandt",
+        "artistimg": "./Assets/Rembrandt_self_portrait.jpg",
+        "life": "1606-1669",
+        "artistDesc": "A Dutch Golden Age painter, renowned for his mastery of light and emotion in works like The Night Watch. Despite personal struggles, his legacy endures as one of Europe's greatest artists, inspiring generations with his timeless artistry."
     },
     {
         "type": "painting",
         "title": "Roses",
         "medium": "Oil on canvas",
         "image": "./Assets/roses_1991.67.1.jpg",
-        "artist": "Vincent van Gogh"
+        "artist": "Vincent van Gogh",
+        "artistimg": "./Assets/Vincent_van_Gogh.jpg",
+        "life": "1853-1890",
+        "artistDesc": "A Dutch Post-Impressionist painter, is renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'. His bold brushwork and emotional intensity continue to captivate audiences, making him one of the most influential figures in the history of Western art."
     },
     {
         "type": "painting",
         "title": "Self-portrait",
         "medium": "Oil on canvas",
         "image": "./Assets/self-portrait_1998.74.5.jpg",
-        "artist": "Vincent van Gogh"
+        "artist": "Vincent van Gogh",
+        "artistimg": "./Assets/Vincent_van_Gogh.jpg",
+        "life": "1853-1890",
+        "artistDesc": "A Dutch Post-Impressionist painter, is renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'. His bold brushwork and emotional intensity continue to captivate audiences, making him one of the most influential figures in the history of Western art."
     },
     {
         "type": "painting",
         "title": "Artist's garden in Argenteuil",
         "medium": "Oil on canvas",
         "image": "./Assets/the_artist's_garden_in_argenteuil_(a_corner_of_the_garden_with_dahlias)_1991.27.1.jpg",
-        "artist": "Claude Monet"
+        "artist": "Claude Monet",
+        "artistimg": "./Assets/Claude_Monet_1899_Nadar.jpg",
+        "life": "1840-1926",
+        "artistDesc": "A seminal figure of Impressionism, is celebrated for his revolutionary portrayal of light and atmosphere, exemplified in iconic works like 'Impression, Sunrise'. Despite facing personal and financial challenges, Monet's legacy endures as a pioneer of modern art, inspiring generations with his evocative depictions of nature's transient beauty."
     },
     {
         "type": "painting",
         "title": "The mill",
         "medium": "Oil on canvas",
         "image": "./Assets/the_mill_1942.9.62.jpg",
-        "artist": "Rembrandt"
+        "artist": "Rembrandt",
+        "artistimg": "./Assets/Rembrandt_self_portrait.jpg",
+        "life": "1606-1669",
+        "artistDesc": "A Dutch Golden Age painter, renowned for his mastery of light and emotion in works like The Night Watch. Despite personal struggles, his legacy endures as one of Europe's greatest artists, inspiring generations with his timeless artistry."
     },
     {
         "type": "painting",
         "title": "Woman with a Parasol",
         "medium": "Oil on canvas",
         "image": "./Assets/woman_with_a_parasol_-_madame_monet_and_her_son_1983.1.29.jpg",
-        "artist": "Claude Monet"
+        "artist": "Claude Monet",
+        "artistimg": "./Assets/Claude_Monet_1899_Nadar.jpg",
+        "life": "1840-1926",
+        "artistDesc": "A seminal figure of Impressionism, is celebrated for his revolutionary portrayal of light and atmosphere, exemplified in iconic works like 'Impression, Sunrise'. Despite facing personal and financial challenges, Monet's legacy endures as a pioneer of modern art, inspiring generations with his evocative depictions of nature's transient beauty."   
     }
 ]

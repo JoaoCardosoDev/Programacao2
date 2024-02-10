@@ -36,19 +36,23 @@ export default class Gallery {
  
         let currentImage = document.querySelector(".popImage");
         let currentIndex = this.#gallery.findIndex(element => element.image === currentImage.getAttribute('src'));
-        let nextImage = this.gallery[currentIndex + 1].image;
-        currentImage.src = nextImage;
+        if (currentIndex < this.#gallery.length - 1) {
+            let nextImage = this.gallery[currentIndex + 1].image;
+            currentImage.src = nextImage;
+        }else{
+            currentImage.src = this.#gallery[0].image;
         }
-    
+    }
     back() {
         let currentImage = document.querySelector(".popImage");
         let currentIndex = this.#gallery.findIndex(element => element.image === currentImage.getAttribute('src'));
-        if (currentIndex>=0 && currentIndex<= this.#gallery.findIndex()) {
-            let previousImage = this.gallery[currentIndex - 1].image;
+        if (currentIndex > 0) {
+            let previousImage = this.#gallery[currentIndex - 1].image;
             currentImage.src = previousImage;
         }else{
-            let div = document.querySelector(".picViewer");
-            div.style.display = "none";
+            // let div = document.querySelector(".picViewer");
+            // div.style.display = "none";
+            currentImage.src = this.#gallery[this.#gallery.length - 1].image;
         }
 
     }
