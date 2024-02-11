@@ -6,15 +6,20 @@ export default class Gallery {
     #gallery;
     #next;
     #back;
+    #remove;
+    #callback;
 
-    constructor(/*callback*/) {
+    constructor(callback) {
         this.#gallery = [];
-        this.#next = document.querySelector(".next")
-        this.#back = document.querySelector(".back")
+        this.#callback = callback;
+        this.#next = document.querySelector(".next");
+        this.#back = document.querySelector(".back");
+        this.#remove = document.querySelector(".remove");
         this.loaded();
 
-        this.#next.addEventListener("click",() => this.next(), false)
-        this.#back.addEventListener("click",() => this.back(), false)
+        this.#next.addEventListener("click",() => this.next())
+        this.#back.addEventListener("click",() => this.back())
+        this.#remove.addEventListener("click", () => this.removeArt())
     }
 
     loaded() {
@@ -24,14 +29,35 @@ export default class Gallery {
     addArt(art) {
         switch (art.type) {
             case "painting":
-                this.#gallery.push(new Painting(art/*, this.#callbackArt(art)*/));
+                this.#gallery.push(new Painting(art, this.#callback));
                 break;
             case "sculpture":
-                this.#gallery.push(new Sculpture(art/*, this.#callbackArt(art)*/));
+                this.#gallery.push(new Sculpture(art, this.#callback));
                 break;
         }
+    }
+    removeArt() {
+        let currentImage = document.querySelector(".popImage");
+        let wrapper = document.querySelector("#wrapper");
+        let images = wrapper.querySelectorAll("img");
 
-    } 
+        images.forEach(img => {
+            if (img.src === currentImage.src) {
+                img.remove();
+            }
+        });
+
+        let findIndex = this.#gallery.findIndex(element => element.image === currentImage.getAttribute('src'));
+        console.log(`Removed ${this.#gallery[findIndex].title}`);
+        document.querySelector(".showConsole").innerHTML += `Removed ${this.#gallery[findIndex].title} <br>`;
+
+
+        let hideDiv = document.querySelector(".picViewer");
+        hideDiv.removeChild(currentImage)
+        hideDiv.style.display = "none";
+    }
+
+    
     next() {
  
         let currentImage = document.querySelector(".popImage");
@@ -50,8 +76,6 @@ export default class Gallery {
             let previousImage = this.#gallery[currentIndex - 1].image;
             currentImage.src = previousImage;
         }else{
-            // let div = document.querySelector(".picViewer");
-            // div.style.display = "none";
             currentImage.src = this.#gallery[this.#gallery.length - 1].image;
         }
 
@@ -60,19 +84,4 @@ export default class Gallery {
     get gallery() {
         return this.#gallery;
     }
-    // #callbackArt(art) {
-    //     if (this.#currentPiece){
-    //         this.#currentPiece.active = false;
-    //     }
-
-    //     this.#currentPiece = this.#gallery.find(ar => ar.title === art.title)
-    //     if(this.#currentPiece) {
-    //         this.#currentPiece.active = true;
-    //         document.querySelector(".paintingInfo").innerText = this.#currentPiece.title;
-    //         this.#callback(art);
-    //     }else{
-    //         console.log("Art not found");
-    //     }
-
-    // }
 }

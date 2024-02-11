@@ -3,19 +3,17 @@ export default class Artwork {
     
     #data;
     #imageTag;
-    // #callback;
+    #callback;
     
-    constructor(data, /*callback*/) {
+    constructor(data, callback) {
         this.#data = data;
-        // this.#callback = callback;
+        this.#callback = callback;
 
         this.#imageTag = document.createElement("img");
         this.#imageTag.src = this.#data.image;
-        // this.#imageTag.onclick = () => this.#callback();
-        // this.#imageTag.onclick = () => console.log("clicked");
 
-        this.#imageTag.addEventListener("click", () => this.handlerClick(), false);
-        this.#imageTag.addEventListener("mouseover", () => this.info(), false);
+        this.#imageTag.addEventListener("click", () => this.#callback());
+        this.#imageTag.addEventListener("mouseover", () => this.info());
 
         const wrapper = document.querySelector("#wrapper");
         wrapper.appendChild(this.#imageTag);
@@ -44,36 +42,6 @@ export default class Artwork {
         author.prepend(aimg);
         
     }
-    handlerClick() {
-
-        let divShow = document.querySelector(".picViewer");
-        let img = document.createElement('img');
-        img.src = this.#data.image;
-        img.className = "popImage";
-        
-        let divShowDisplayStyle = window.getComputedStyle(divShow).getPropertyValue('display');
-
-
-        if (divShowDisplayStyle === "none") {
-        
-            divShow.style.display = "flex"
-            divShow.appendChild(img);
-            img.addEventListener("click", () => {        
-                console.log("Hiding div");
-                divShow.style.display = "none";
-                divShow.removeChild(img);
-                console.log(`${this.#data.title} pop up closed`);
-                document.querySelector(".showConsole").innerHTML += `Clicked ${this.#data.title} <br>`;
-        }
-            , false);
-
-            console.log(`${this.#data.title} clicked`)
-            document.querySelector(".showConsole").innerHTML += `Clicked ${this.#data.title} <br>`;
-
-    }
-    
-    }
-
     get type () {
         return this.#data.type;
 }
@@ -89,13 +57,10 @@ export default class Artwork {
     get image () {
         return this.#data.image;
 }
-    get active() {
-        return this.#imageTag.className.length !== 0;
-}
-    set active(value) {
-        this.#imageTag.className = value ? 'active' : '';
-    }
     get imageTag() {
         return this.#imageTag;
+    }
+    get data() {
+        return this.#data;
     }
 }
