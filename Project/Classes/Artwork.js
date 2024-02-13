@@ -35,9 +35,9 @@ export default class Artwork {
         aimg.src = this.#data.artistimg;
         document.querySelector(".info .authorInfo").innerHTML =`
         <ul>
-        <li>Author: ${this.#data.artist} </li><br>
-        <li>Life: ${this.#data.life} </li><br>
-        <li>Description: ${this.#data.artistDesc} </li><br>
+        <li>${this.#data.artist} </li>
+        <li>${this.#data.life} </li>
+        <li>${this.#data.artistDesc} </li>
         </ul>`;
         author.prepend(aimg);
         
