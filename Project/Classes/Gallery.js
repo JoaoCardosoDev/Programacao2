@@ -37,7 +37,7 @@ export default class Gallery {
         }
     }
     removeArt() {
-        let currentImage = document.querySelector(".popImage");
+        let currentImage = document.querySelector(".picViewer");
         let wrapper = document.querySelector("#wrapper");
         let images = wrapper.querySelectorAll("img");
 
@@ -52,15 +52,16 @@ export default class Gallery {
         document.querySelector(".showConsole").innerHTML += `Removed ${this.#gallery[findIndex].title} <br>`;
 
 
-        let hideDiv = document.querySelector(".picViewer");
-        hideDiv.removeChild(currentImage)
+        let hideDiv = document.querySelector(".popUp");
+        
+        document.querySelector('.picContainer').src = '';
         hideDiv.style.display = "none";
     }
 
     
     next() {
  
-        let currentImage = document.querySelector(".popImage");
+        let currentImage = document.querySelector(".picViewer");
         let currentIndex = this.#gallery.findIndex(element => element.image === currentImage.getAttribute('src'));
         if (currentIndex < this.#gallery.length - 1) {
             let nextImage = this.gallery[currentIndex + 1].image;
@@ -70,7 +71,7 @@ export default class Gallery {
         }
     }
     back() {
-        let currentImage = document.querySelector(".popImage");
+        let currentImage = document.querySelector(".picViewer");
         let currentIndex = this.#gallery.findIndex(element => element.image === currentImage.getAttribute('src'));
         if (currentIndex > 0) {
             let previousImage = this.#gallery[currentIndex - 1].image;

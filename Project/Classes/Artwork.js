@@ -25,7 +25,7 @@ export default class Artwork {
         
         document.querySelector(".info .paintingInfo").innerHTML =`
         <ul>
-        <li>Title: ${this.#data.title} </li><br>
+        <li>Title: <b>${this.#data.title}</b> </li><br>
         <li>Type: ${this.#data.type} </li><br>
         <li>Medium: ${this.#data.medium} </li><br>
         <li>Description: ${this.#data.artDesc} </li><br>
@@ -35,9 +35,9 @@ export default class Artwork {
         aimg.src = this.#data.artistimg;
         document.querySelector(".info .authorInfo").innerHTML =`
         <ul>
-        <li>${this.#data.artist} </li>
-        <li>${this.#data.life} </li>
-        <li>${this.#data.artistDesc} </li>
+        <li><b>${this.#data.artist}</b></li>
+        <li><i>${this.#data.life}</i></li>
+        <li>${this.#data.artistDesc}</li>
         </ul>`;
         author.prepend(aimg);
         

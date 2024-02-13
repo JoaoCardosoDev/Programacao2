@@ -18,7 +18,7 @@
         "artist": "Vincent van Gogh",
         "artistimg": "./Assets/Vincent_van_Gogh.jpg",
         "life": "1853-1890",
-        "artistDesc": "A Dutch Post-Impressionist painter, is renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'. His bold brushwork and emotional intensity continue to captivate audiences, making him one of the most influential figures in the history of Western art."
+        "artistDesc": "A Dutch Post-Impressionist painter, renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'."
         },
     {
         "type": "painting",
@@ -48,7 +48,7 @@
         "artist": "Vincent van Gogh",
         "artistimg": "./Assets/Vincent_van_Gogh.jpg",
         "life": "1853-1890",
-        "artistDesc": "A Dutch Post-Impressionist painter, is renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'. His bold brushwork and emotional intensity continue to captivate audiences, making him one of the most influential figures in the history of Western art."
+        "artistDesc": "A Dutch Post-Impressionist painter, renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'."
     },
     {
         "type": "painting",
@@ -58,7 +58,7 @@
         "artist": "Vincent van Gogh",
         "artistimg": "./Assets/Vincent_van_Gogh.jpg",
         "life": "1853-1890",
-        "artistDesc": "A Dutch Post-Impressionist painter, is renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'. His bold brushwork and emotional intensity continue to captivate audiences, making him one of the most influential figures in the history of Western art."
+        "artistDesc": "A Dutch Post-Impressionist painter, renowned for his expressive use of color and unique artistic style. Despite struggling with mental health issues throughout his life, van Gogh produced a vast collection of artworks, including masterpieces like 'Starry Night' and 'Sunflowers'."
     },
     {
         "type": "painting",
@@ -89,5 +89,116 @@
         "artistimg": "./Assets/Claude_Monet_1899_Nadar.jpg",
         "life": "1840-1926",
         "artistDesc": "A seminal figure of Impressionism, is celebrated for his revolutionary portrayal of light and atmosphere, exemplified in iconic works like 'Impression, Sunrise'. Despite facing personal and financial challenges, Monet's legacy endures as a pioneer of modern art, inspiring generations with his evocative depictions of nature's transient beauty."   
+    },
+    {
+        "type": "sculpture",
+        "title": "David",
+        "medium": "Marble",
+        "image": "./Assets/michelangelos-david.jpg",
+        "artist": "Michelangelo",
+        "artistimg": "./Assets/Michelangelo.jpg",
+        "life": "1475-1564",
+        "artistDesc": "An Italian Renaissance artist known for his sculptures like David and the Pieta, as well as his frescoes in the Sistine Chapel. His work epitomizes the ideals of the Renaissance, making him one of the greatest artists in history."   
+    },
+    {
+        "type": "sculpture",
+        "title": "Pieta",
+        "medium": "Marble",
+        "image": "./Assets/Pieta.jpg",
+        "artist": "Michelangelo",
+        "artistimg": "./Assets/Michelangelo.jpg",
+        "life": "1475-1564",
+        "artistDesc": "An Italian Renaissance artist known for his sculptures like David and the Pieta, as well as his frescoes in the Sistine Chapel. His work epitomizes the ideals of the Renaissance, making him one of the greatest artists in history."   
+    },
+    {
+        "type": "photography",
+        "title": "Grand Canyon National Park",
+        "medium": "Photo",
+        "image": "./Assets/Ansel_Adams_-_National_Archives_79-AA-F09-v2-j7.jpg",
+        "artist": "Ansel Adams",
+        "artistimg": "./Assets/Ansel_Adams.jpg",
+        "life": "1902-1984",
+        "artistDesc": "An American landscape photographer celebrated for his stunning black-and-white images of the American West, notably national parks like Yosemite. His work captures the grandeur of nature with technical brilliance and emotional depth, inspiring conservation efforts. Adams is regarded as one of the most influential photographers in history."   
+    },
+    {
+        "type": "photography",
+        "title": "Grand Canyon National Park",
+        "medium": "Photo",
+        "image": "./Assets/Ansel_Adams_-_National_Archives_79-AA-F09-v2-j7.jpg",
+        "artist": "Ansel Adams",
+        "artistimg": "./Assets/Ansel_Adams.jpg",
+        "life": "1902-1984",
+        "artistDesc": "An American landscape photographer celebrated for his stunning black-and-white images of the American West, notably national parks like Yosemite. His work captures the grandeur of nature with technical brilliance and emotional depth, inspiring conservation efforts. Adams is regarded as one of the most influential photographers in history."   
+    },
+    {
+        "type": "streetart",
+        "title": "Fox (Lis)",
+        "medium": "Mixed Media",
+        "image": "./Assets/FoxLisbon.jpg",
+        "artist": "Bordalo II",
+        "artistimg": "./Assets/Arturo_bordalo.jpg",
+        "life": "1987-",
+        "artistDesc": "Portuguese street artist and self-described artivist. His work consists mainly of large installations and murals made from recycled trash, with the intention of highlighting waste and over-consumption in our world today."   
+    },
+    {
+        "type": "streetart",
+        "title": "The Hoopoe",
+        "medium": "Mixed Media",
+        "image": "./Assets/The_Hoopoe_by_Bordalo_II_Santarem_02.jpg",
+        "artist": "Bordalo II",
+        "artistimg": "./Assets/Arturo_bordalo.jpg",
+        "life": "1987-",
+        "artistDesc": "Portuguese street artist and self-described artivist. His work consists mainly of large installations and murals made from recycled trash, with the intention of highlighting waste and over-consumption in our world today."   
+    },
+    {
+        "type": "streetart",
+        "title": "Dortmund barking dog",
+        "medium": "Acrylic",
+        "image": "./Assets/Dortmund_Keith_Haring.jpg",
+        "artist": "Keith Haring",
+        "artistimg": "./Assets/Keithharing.png",
+        "life": "1958-1988",
+        "artistDesc": "Keith was an influential American artist recognized for his colorful and energetic graffiti-style artwork. His iconic imagery, featuring simplified figures and bold lines, addressed social and political themes, leaving a lasting impact on contemporary art."   
+    },
+    {
+        "type": "streetart",
+        "title": "Barcelona Mural",
+        "medium": "Paint on wall",
+        "image": "./Assets/mural.jpg",
+        "artist": "Keith Haring",
+        "artistimg": "./Assets/Keithharing.png",
+        "life": "1958-1988",
+        "artistDesc": "Keith was an influential American artist recognized for his colorful and energetic graffiti-style artwork. His iconic imagery, featuring simplified figures and bold lines, addressed social and political themes, leaving a lasting impact on contemporary art."   
+    },
+    {
+        "type": "print",
+        "title": "Banana",
+        "medium": "Print",
+        "image": "./Assets/banana.jpg",
+        "artist": "Andy Warhol",
+        "artistimg": "./Assets/Andy_Warhol.jpg",
+        "life": "1928-1987",
+        "artistDesc": "A leading figure in the Pop Art movement. He's famous for his colorful images of celebrities and consumer products, blurring the lines between art and popular culture."   
+    },
+    {
+        "type": "print",
+        "title": "Campbell",
+        "medium": "Print",
+        "image": "./Assets/campbell.jpg",
+        "artist": "Andy Warhol",
+        "artistimg": "./Assets/Andy_Warhol.jpg",
+        "life": "1928-1987",
+        "artistDesc": "A leading figure in the Pop Art movement. He's famous for his colorful images of celebrities and consumer products, blurring the lines between art and popular culture."   
+    },
+    {
+        "type": "print",
+        "title": "Marilyn Monroe",
+        "medium": "Print",
+        "image": "./Assets/Marilyn-Monroe.jpg",
+        "artist": "Andy Warhol",
+        "artistimg": "./Assets/Andy_Warhol.jpg",
+        "life": "1928-1987",
+        "artistDesc": "A leading figure in the Pop Art movement. He's famous for his colorful images of celebrities and consumer products, blurring the lines between art and popular culture."   
     }
+
 ]
