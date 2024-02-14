@@ -63,7 +63,6 @@ p{
     height: 130px;
 }
 
-
 #wrapper{
     display: flex;
     flex-direction: row;
@@ -73,6 +72,10 @@ p{
     overflow-x: scroll;
     border-bottom: solid 1px black;
     padding: 4%;
+}
+
+#wrapper img:hover{
+    transform: scale(1.2)
 }
 ::-webkit-scrollbar {
     width: 10px; 
@@ -88,7 +91,7 @@ p{
     height: 256px;
     object-fit: cover;
     margin: auto;
-
+    transition: transform 0.7s ease;
 }
     
 .devlog{
