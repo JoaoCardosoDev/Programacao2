@@ -1,6 +1,7 @@
 import Artwork from "./Artwork.js";
 
 export default class Sculpture extends Artwork {
+    
     #image;
 
     constructor(data, callback){
@@ -8,6 +9,7 @@ export default class Sculpture extends Artwork {
 
         this.#image = data.image;
     }
+
     get image () {
         return this.#image;
     }

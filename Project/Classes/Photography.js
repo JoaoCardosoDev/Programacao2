@@ -1,6 +1,7 @@
 import Artwork from "./Artwork.js";
 
 export default class Photography extends Artwork {
+    
     #image;
 
     constructor(data, callback){

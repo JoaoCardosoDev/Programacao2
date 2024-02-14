@@ -26,6 +26,10 @@ To run the project locally:
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
 
+## Disclaimer
+
+Please note that this website is optimized and designed for Google Chrome, other browsers have some discrepancies.
+
 ## Credits
 
 This website project was created by João Cardoso as part of the curriculum at Etic Algarve. Special thanks to Bruno Perry for his guidance and supervision during the development process.
