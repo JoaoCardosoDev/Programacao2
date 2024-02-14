@@ -1,5 +1,8 @@
+import Streetart from "./Streetart.js";
 import Painting from "./Painting.js"
 import Sculpture from "./Sculpture.js";
+import Photography from "./Photography.js";
+import Print from "./Print.js";
 
 export default class Gallery {
 
@@ -33,6 +36,15 @@ export default class Gallery {
                 break;
             case "sculpture":
                 this.#gallery.push(new Sculpture(art, this.#callback));
+                break;
+            case "streetart":
+                this.#gallery.push(new Streetart(art, this.#callback));
+                break;
+            case "photography":
+                this.#gallery.push(new Photography(art, this.#callback));
+                break;
+            case "print":
+                this.#gallery.push(new Print(art, this.#callback));
                 break;
         }
     }

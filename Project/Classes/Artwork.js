@@ -25,10 +25,10 @@ export default class Artwork {
         
         document.querySelector(".info .paintingInfo").innerHTML =`
         <ul>
-        <li>Title: <b>${this.#data.title}</b> </li><br>
-        <li>Type: ${this.#data.type} </li><br>
-        <li>Medium: ${this.#data.medium} </li><br>
-        <li>Description: ${this.#data.artDesc} </li><br>
+        <li><b>Title</b>: ${this.#data.title} </li><br>
+        <li><b>Type</b>: ${this.#data.type} </li><br>
+        <li><b>Medium</b>: ${this.#data.medium} </li><br>
+        <li><b>Description</b>: ${this.#data.artDesc} </li><br>
         </ul>`;
         let author = document.querySelector(".info .authorInfo");
         let aimg = document.createElement('img');

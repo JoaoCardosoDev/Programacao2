@@ -33,7 +33,7 @@ window.onload = async () => {
 
     const gallery = new Gallery(handlerClick);
 
-    let galleryMax = 20;
+    let galleryMax = 10;
 
     console.log(`Welcome, the maximum number of art pieces for this gallery is ${galleryMax}`);
     document.querySelector(".showConsole").innerHTML += `Welcome, the maximum number of art pieces for this gallery is ${galleryMax}<br>`;
@@ -41,6 +41,8 @@ window.onload = async () => {
 if (res.length < galleryMax) {
     galleryMax = res.length;
 }
+
+res.sort(() => Math.random() - 0.5);
 
 for (let i = 0; i < galleryMax; i++){
     gallery.addArt(res[i])   
